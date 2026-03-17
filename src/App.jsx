@@ -216,7 +216,7 @@ function App() {
       <Loader loading={loadingStatus}/>
       <Navbar />
       <div className="mainpage flex justify-center items-center w-full mb-5">
-        <div className="card border border-purple-500 mt-10 shadow-lg px-7 py-7 rounded-md  grid grid-cols-1 lg:grid-cols-2 w-2/3  sm:w-2/3 md:w-1/2 ">
+        <div className="card border border-purple-500 mt-10 shadow-lg px-7 py-7 rounded-md  grid grid-cols-1 lg:grid-cols-2 w-4/5  sm:w-2/3 md:w-1/2 ">
           <div className="left col col-span-1">
             <div className='col-span-2'>
               <h1 className='text-lg text-center font-medium text-gray-800'>Book a ride</h1>
@@ -267,7 +267,7 @@ function App() {
             </div>
           </div>
           <div className="right items-center justify-center flex col col-span-1">
-            <div className='seat-matrix grid grid-cols-3 gap-1'>
+            <div className='seat-matrix grid grid-cols-3 gap-1 text-sm sm:text-base'>
               <button id='front' onClick={updateSeats} className={`seat col col-span-2 border ${!(bookedSeatsMatrix.front)?'bg-slate-200':''} ${seatMatrix.front ? "border-slate-400" : "border-purple-300 bg-purple-300"} rounded py-10 px-5 text-center`}>Front</button>
               <button id='driver' className={`seat col col-span-1 border border-slate-400 bg-slate-200 rounded py-15 px-5`}>Driver</button>
               <button id='left' onClick={updateSeats} className={`seat col col-span-1 border ${!(bookedSeatsMatrix.left)?'bg-slate-200':''} ${seatMatrix.left? "border-slate-400" : "border-purple-300 bg-purple-300"} rounded py-15 px-5`}>Left</button>
